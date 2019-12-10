@@ -90,10 +90,12 @@ nav ul li a:hover{
 
 
 #resume{
-    height: 150vh;
+    height: 175vh;
 }
 #resume img{
     width: 70%;
+    margin-left: 7vw;
+    margin-right: 5vw;
 }
 
 
