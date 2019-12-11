@@ -156,48 +156,6 @@ div{
         margin-left: 8vw;
         padding: 0;
     }
-    /* nav{
-        color: #CBCBCB;
-        border-left: 1px solid #CBCBCB;
-        height: 100vh;
-        position: fixed;
-        right: 0;
-        margin: 0;
-        padding: 0;
-        z-index: 1;
-    }
-    nav ul li a{
-        text-decoration: none; 
-        color: #CBCBCB;
-    }
-    nav ul{
-        text-decoration: none; 
-        list-style: none;
-        writing-mode: vertical-rl;
-        text-orientation: mixed;
-    
-        padding-left: 10px;
-        padding-right: 5px;
-    
-        position: relative;
-        bottom: 0;
-        top: 40vh;
-        
-    }
-    nav ul li{
-        display: inline;
-    
-        font-size: 18px;
-        padding-top: 3vh;
-        padding-bottom: 3vh;
-    
-        cursor: pointer;
-    }
-    
-    nav ul li a:hover{
-        color: white;
-        transition: 0.3s;
-    } */
     nav{
         display: none;
         width: 0;
@@ -271,18 +229,6 @@ div{
         position: relative;
     }
     
-    #contact ul li a:after{
-        content: '';
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        width: 0%;
-        border-bottom: 10px solid white;
-        transition: 0.6s;
-    }
-    #contact ul li a:hover:after{
-        width: 100%;
-    }
     #descriptionDarkGray{
         color: #727272;
     }
