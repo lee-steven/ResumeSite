@@ -198,15 +198,10 @@ div{
     #resume{
         height: auto;
         margin: 0 auto;
-        text-align: center;
     }
     #resume img{
-        text-align: center;
         margin: 0 auto;
-        max-width: 80%;
-        width: 100%;
-        margin-left: -18vw;
-
+        width: 80vw;
     }
     
     
