@@ -1,21 +1,40 @@
 html{
     overflow-x:hidden;
-
 }
 body{
     background-color: #0F0F0F;
     font-family: halyard-display, sans-serif;
-
+    color: white;
     margin: 0 auto; 
     padding: 0 0 0 8vw;
-    width: 100%;
     scroll-behavior: smooth;
 }
 div{
     outline: none;
 }
 
+.resume-item {
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-right: 8vw;
+}
+
+.resume-item-heading {
+    margin: 0;
+}
+.resume-item-subheading {
+    font-size: 14px;
+    font-weight: 400;
+    margin: 0;
+    margin-top:5px;
+}
+
 @media (min-width: 728px) {
+    body {
+        margin-right: 71px;
+    }
     nav{
         color: #CBCBCB;
         border-left: 1px solid #CBCBCB;
@@ -72,7 +91,6 @@ div{
     }
     
     #home h1{
-        color: white;
         font-size: 15vw;
         position: absolute;
         bottom: 0;
@@ -87,22 +105,16 @@ div{
         height: 100vh;
     }
     #about p{
-        color: white;
         font-size: 23px;
         max-width: 37vw;
         width: 100%;
         margin: 50% auto;
     }
     
-    
-    #resume{
-        height: 175vh;
-    }
-    #resume img{
-        width: 70%;
-        margin-left: 7vw;
-        margin-right: 5vw;
-    }
+     .resume-item {
+        display: grid;
+        grid-template-columns: 300px 1fr;
+     }
     
     
     #contact{
@@ -112,14 +124,13 @@ div{
         text-decoration: none; 
         list-style: none;
     
-        color: white;
         font-size: 150px;
         font-weight: 600;
     }
     #contact ul li a{
         text-decoration: none;
-        color: white;
         position: relative;
+        color: white;
     }
     
     #contact ul li a:after{
@@ -174,7 +185,6 @@ div{
     }
     
     #home h1{
-        color: white;
         font-size: 15vw;
         position: absolute;
         bottom: 0;
@@ -188,7 +198,6 @@ div{
         height: 50vh;
     }
     #about p{
-        color: white;
         font-size: 18px;
         width: 85%;
         margin-top: 80%;
@@ -211,17 +220,15 @@ div{
     #contact ul{
         text-decoration: none; 
         list-style: none;
-        
-        color: white;
+    
         font-size: 80px;
         font-weight: 600;
         padding: 0;
-
     }
     #contact ul li a{
         text-decoration: none;
-        color: white;
         position: relative;
+        color: white;
     }
     
     #descriptionDarkGray{
