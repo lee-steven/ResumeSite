@@ -13,6 +13,9 @@ div{
     outline: none;
 }
 
+#resume h1 {
+    margin-top: 70px;
+}
 .resume-item {
     border-top: 1px solid white;
     border-bottom: 1px solid white;
@@ -29,6 +32,9 @@ div{
     font-weight: 400;
     margin: 0;
     margin-top:5px;
+}
+.resume-item-heading-des {
+    font-weight: 400;
 }
 
 @media (min-width: 728px) {
@@ -102,7 +108,7 @@ div{
     
     
     #about{
-        height: 100vh;
+        height: 70vh;
     }
     #about p{
         font-size: 23px;
@@ -110,8 +116,8 @@ div{
         width: 100%;
         margin: 50% auto;
     }
-    
-     .resume-item {
+
+    .resume-item {
         display: grid;
         grid-template-columns: 300px 1fr;
      }
@@ -162,8 +168,6 @@ div{
 
 @media (max-width: 727px) {
     body{
-        width: 100%;
-        max-width: 95%;
         margin-left: 8vw;
         padding: 0;
     }
