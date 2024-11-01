@@ -1,6 +1,6 @@
-html{
-    overflow-x:hidden;
-}
+:root {
+    --gliss-delay: 0s;
+  }
 body{
     background-color: #0F0F0F;
     font-family: halyard-display, sans-serif;
@@ -12,6 +12,34 @@ body{
 div{
     outline: none;
 }
+
+.container {
+    overflow-x: hidden;
+}
+
+#home span {
+    font-size: 15vw;
+    font-weight: 600;
+}
+#home .head-container > div {
+    position: absolute;
+    bottom: 0;
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+}
+
+
+@keyframes gliss {
+    0%, 100% { transform: translateY(0)}
+    50% { transform: translateY(-30%)}
+}
+  
+  .letter {
+    display: inline-block;
+    overflow-wrap: normal;
+    animation: 1s ease-in-out var(--gliss-delay)  alternate gliss;
+  }
 
 #resume h1 {
     margin-top: 70px;
@@ -95,17 +123,7 @@ div{
         padding-top: 10vh;
         margin: 0;
     }
-    
-    #home h1{
-        font-size: 15vw;
-        position: absolute;
-        bottom: 0;
-        margin: 0;
-        padding: 0;
-        line-height: 1;
-      
-    }
-    
+
     
     #about{
         height: 70vh;
@@ -161,10 +179,6 @@ div{
         color: #D6D6D6;
     }
 }
-  
-
-
-
 
 @media (max-width: 727px) {
     body{
@@ -187,16 +201,6 @@ div{
         padding-top: 10vh;
         margin: 0;
     }
-    
-    #home h1{
-        font-size: 15vw;
-        position: absolute;
-        bottom: 0;
-        margin: 0;
-        padding: 0;
-        line-height: 1;
-    }
-    
     
     #about{
         height: 50vh;

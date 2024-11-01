@@ -37,3 +37,41 @@ $('a[href*="#"]')
       }
     }
   });
+
+const container = document.querySelector('.head-container');
+const textNode = document.querySelector('.text');
+const textNodeValue = textNode.innerText;
+
+const breakIntoWordArr = (phrase) => {
+   return phrase.split(' ');
+}
+
+const breakWordIntoLetterArr = (word) => {
+  return word.split('');
+}
+
+const wordArr = breakIntoWordArr(textNodeValue);
+
+const newWordContainer = document.createElement('div');
+let delayIndex = 0;
+wordArr.forEach((word, i, wordArr) => {
+  const letterArr = breakWordIntoLetterArr(word);
+
+  letterArr.forEach((letter, j, letterArr) => {
+    const newSpan = document.createElement('span');
+    const letterContent = document.createTextNode(letter);
+    newSpan.appendChild(letterContent);
+    newSpan.classList.add("letter");
+    newSpan.style.setProperty('--gliss-delay', `${delayIndex * 0.1}s`);
+    delayIndex++;
+    newWordContainer.appendChild(newSpan);
+    
+    if(j === letterArr.length - 1 && i !== wordArr.length - 1) {
+      const newSpaceSpan = document.createElement('span');
+      newSpaceSpan.appendChild(document.createTextNode(' '));
+      newWordContainer.appendChild(newSpaceSpan);
+    } 
+  })
+})
+
+textNode.replaceWith(newWordContainer);
